@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingLotManager.WebApi", "ParkingLotManager.WebApi\ParkingLotManager.WebApi.csproj", "{10CB257A-6F26-45A1-9F10-020F1249C21A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingLotManager.ReportApi", "ParkingLotManager.ReportApi\ParkingLotManager.ReportApi.csproj", "{B70A4180-6FD7-4317-8ECD-0FF68495F4CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingLotManager.XUnitTests", "ParkingLotManager.XUnitTests\ParkingLotManager.XUnitTests.csproj", "{101FF11A-EC52-4971-8E95-3F5DC729CB63}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10CB257A-6F26-45A1-9F10-020F1249C21A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10CB257A-6F26-45A1-9F10-020F1249C21A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10CB257A-6F26-45A1-9F10-020F1249C21A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{10CB257A-6F26-45A1-9F10-020F1249C21A}.Debug|x64.Build.0 = Debug|Any CPU
+		{10CB257A-6F26-45A1-9F10-020F1249C21A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{10CB257A-6F26-45A1-9F10-020F1249C21A}.Debug|x86.Build.0 = Debug|Any CPU
+		{10CB257A-6F26-45A1-9F10-020F1249C21A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10CB257A-6F26-45A1-9F10-020F1249C21A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10CB257A-6F26-45A1-9F10-020F1249C21A}.Release|x64.ActiveCfg = Release|Any CPU
+		{10CB257A-6F26-45A1-9F10-020F1249C21A}.Release|x64.Build.0 = Release|Any CPU
+		{10CB257A-6F26-45A1-9F10-020F1249C21A}.Release|x86.ActiveCfg = Release|Any CPU
+		{10CB257A-6F26-45A1-9F10-020F1249C21A}.Release|x86.Build.0 = Release|Any CPU
+		{B70A4180-6FD7-4317-8ECD-0FF68495F4CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B70A4180-6FD7-4317-8ECD-0FF68495F4CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B70A4180-6FD7-4317-8ECD-0FF68495F4CA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B70A4180-6FD7-4317-8ECD-0FF68495F4CA}.Debug|x64.Build.0 = Debug|Any CPU
+		{B70A4180-6FD7-4317-8ECD-0FF68495F4CA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B70A4180-6FD7-4317-8ECD-0FF68495F4CA}.Debug|x86.Build.0 = Debug|Any CPU
+		{B70A4180-6FD7-4317-8ECD-0FF68495F4CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B70A4180-6FD7-4317-8ECD-0FF68495F4CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B70A4180-6FD7-4317-8ECD-0FF68495F4CA}.Release|x64.ActiveCfg = Release|Any CPU
+		{B70A4180-6FD7-4317-8ECD-0FF68495F4CA}.Release|x64.Build.0 = Release|Any CPU
+		{B70A4180-6FD7-4317-8ECD-0FF68495F4CA}.Release|x86.ActiveCfg = Release|Any CPU
+		{B70A4180-6FD7-4317-8ECD-0FF68495F4CA}.Release|x86.Build.0 = Release|Any CPU
+		{101FF11A-EC52-4971-8E95-3F5DC729CB63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{101FF11A-EC52-4971-8E95-3F5DC729CB63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{101FF11A-EC52-4971-8E95-3F5DC729CB63}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{101FF11A-EC52-4971-8E95-3F5DC729CB63}.Debug|x64.Build.0 = Debug|Any CPU
+		{101FF11A-EC52-4971-8E95-3F5DC729CB63}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{101FF11A-EC52-4971-8E95-3F5DC729CB63}.Debug|x86.Build.0 = Debug|Any CPU
+		{101FF11A-EC52-4971-8E95-3F5DC729CB63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{101FF11A-EC52-4971-8E95-3F5DC729CB63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{101FF11A-EC52-4971-8E95-3F5DC729CB63}.Release|x64.ActiveCfg = Release|Any CPU
+		{101FF11A-EC52-4971-8E95-3F5DC729CB63}.Release|x64.Build.0 = Release|Any CPU
+		{101FF11A-EC52-4971-8E95-3F5DC729CB63}.Release|x86.ActiveCfg = Release|Any CPU
+		{101FF11A-EC52-4971-8E95-3F5DC729CB63}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

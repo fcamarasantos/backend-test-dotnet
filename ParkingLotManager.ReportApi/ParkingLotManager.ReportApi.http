@@ -1,0 +1,6 @@
+@ParkingLotManager.ReportApi_HostAddress = http://localhost:5144
+
+GET {{ParkingLotManager.ReportApi_HostAddress}}/
+Accept: application/json
+
+###

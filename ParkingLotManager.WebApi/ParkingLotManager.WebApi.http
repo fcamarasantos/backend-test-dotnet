@@ -1,0 +1,6 @@
+@ParkingLotManager.WebApi_HostAddress = http://localhost:5166
+
+GET {{ParkingLotManager.WebApi_HostAddress}}/home/
+Accept: application/json
+
+###

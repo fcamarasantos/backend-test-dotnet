@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ParkingLotManager.ReportApi</name>
+    </assembly>
+    <members>
+        <member name="M:ParkingLotManager.ReportApi.Services.FlowManagementService.CheckInFlowCalc">
+            <summary>
+            Calculates the amount of checked-in vehicles
+            </summary>
+            <returns>Amount of checked-in vehicles</returns>
+        </member>
+    </members>
+</doc>

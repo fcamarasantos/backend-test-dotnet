@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ParkingLotManager.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:ParkingLotManager.WebApi.Controllers.AccountController.Login(ParkingLotManager.WebApi.ViewModels.UserViewModels.LoginViewModel,ParkingLotManager.WebApi.Services.TokenService)">
+            <summary>
+            Log into the system and generate Bearer Token
+            </summary>
+            <param name="viewModel">email and password</param>
+            <param name="tokenService">Bearer Token generator</param>
+            <returns>Bearer Token</returns>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.AccountController.GetAsync(System.String)">
+            <summary>
+            Get collection of users
+            </summary>
+            <param name="apiKeyName">API key</param>
+            <returns>collection of users</returns>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.AccountController.GetByIdAsync(System.Int32,System.String)">
+            <summary>
+            Get user by id
+            </summary>
+            <param name="id">user id</param>
+            <param name="apiKeyName">API key</param>
+            <returns>user</returns>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.AccountController.CreateAsync(ParkingLotManager.WebApi.ViewModels.UserViewModels.CreateUserViewModel,System.String)">
+            <summary>
+            Create a user with no role
+            </summary>
+            <param name="viewModel">viewModel to create user</param>
+            <param name="apiKeyName">API key</param>
+            <returns>created user and its Uri</returns>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.AccountController.Update(System.Int32,ParkingLotManager.WebApi.ViewModels.UserViewModels.UpdateUserViewModel,System.String)">
+            <summary>
+            Update a user by its id
+            </summary>
+            <param name="viewModel">viewModel to update user</param>
+            <param name="id">user id</param>
+            <param name="apiKeyName">API key</param>
+            <returns>updated user</returns>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.AccountController.Delete(System.Int32,System.String)">
+            <summary>
+            Delete a user by its id
+            </summary>
+            <param name="id">user id</param>
+            <param name="apiKeyName">API key</param>
+            <returns>deleted user</returns>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.AccountController.CreateAdminAsync(ParkingLotManager.WebApi.ViewModels.UserViewModels.CreateUserViewModel)">
+            <summary>
+            Create a user with admin role
+            </summary>
+            <param name="viewModel">viewModel to create admin</param>
+            <param name="apiKeyName">API key</param>
+            <returns>user with admin role</returns>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.CompanyController.GetAsync(System.String)">
+            <summary>
+            Get collection of registered companies
+            </summary>
+            <returns>registered companies data</returns>
+            <response code="200">Success</response>
+            <response code="401">Unauthorized</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.CompanyController.GetAsyncByName(System.String,System.String)">
+            <summary>
+            Get company by name
+            </summary>
+            <param name="name">company name</param>
+            <param name="apiKeyName">API Key</param>
+            <returns>company data</returns>
+            <response code="200">Success</response>
+            <response code="401">Unauthorized</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.CompanyController.RegisterAsync(ParkingLotManager.WebApi.ViewModels.CompanyViewModels.RegisterCompanyViewModel,System.String)">
+            <summary>
+            Register a new company
+            </summary>
+            <remarks>
+            {"name":"string","cnpj":{"cnpjNumber":"string"},"address":{"street":"string","city":"string","zipCode":"string"},"telephone":"string","carSlots":0,"motorcycleSlots":0}
+            </remarks>
+            <param name="viewModel">company ViewModel</param>
+            <param name="apiKeyName">API Key</param>
+            <returns>data from the new company</returns>
+            <response code="201">Created</response>
+            <response code="400">Bad Request</response>
+            <response code="401">Unauthorized</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.CompanyController.Update(System.String,ParkingLotManager.WebApi.ViewModels.CompanyViewModels.UpdateCompanyViewModel,System.String)">
+            <summary>
+            Update a company
+            </summary>
+            <remarks>
+            {"name":"string","cnpj":{"cnpjNumber":"string"},"address":{"street":"string","city":"string","zipCode":"string"},"telephone":"string","carSlots":0,"motorcycleSlots":0}
+            </remarks>
+            <param name="name">company name</param>
+            <param name="viewModel">company UpdateViewModel</param>
+            <param name="apiKeyName">API key</param>
+            <returns>company and its updated data</returns>
+            <response code="200">Success</response>
+            <response code="400">Bad Request</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.CompanyController.Delete(System.String,System.String)">
+            <summary>
+            Delete a company
+            </summary>
+            <param name="name">company name</param>
+            <param name="apiKeyName">API key</param>
+            <returns>deleted company</returns>
+            <response code="200">Success</response>
+            <response code="401">Unauthorized</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.HomeController.CheckStatus">
+            <summary>
+            Check API status
+            </summary>
+            <returns>API status</returns>
+            <response code="200">Ok</response>
+            <response code="500">API Offline</response>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.HomeController.ValidateApiKey">
+            <summary>
+            Validate API Key
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.VehicleController.GetAsync(System.String)">
+            <summary>
+            Get collection of vehicles
+            </summary>
+            <returns>collection of vehicles</returns>
+            <response code="200">Success</response>
+            <response code="401">Unauthorized</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.VehicleController.GetByLicensePlateAsync(System.String,System.String)">
+            <summary>
+            Get vehicle by licensePlate
+            </summary>
+            <returns>vehicle data by licensePlate</returns>
+            <response code="200">Success</response>
+            <response code="401">Unauthorized</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.VehicleController.GetIfBrandIsFordAsync">
+            <summary>
+            Get collection of Ford vehicles. Only works with Admin privileges
+            </summary>
+            <returns>collection of Ford vehicles</returns>
+            <response code="200">Success</response>
+            <response code="401">Unauthorized</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.VehicleController.RegisterAsync(ParkingLotManager.WebApi.ViewModels.VehicleViewModels.RegisterVehicleViewModel,System.String)">
+            <summary>
+            Register a new vehicle
+            </summary>
+            <remarks>
+            {"company":{"cnpj":{"cnpjNumber":"string"},"address":{"street":"string","city":"string","zipCode":"string"}},"licensePlate":"strings","brand":"string","model":"string","color":"string","type":1,"companyName":"string"}
+            </remarks>
+            <returns>new vehicle data</returns>
+            <response code="201">Created</response>
+            <response code="400">Bad Request</response>
+            <response code="401">Unauthorized</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.VehicleController.Update(System.String,ParkingLotManager.WebApi.ViewModels.VehicleViewModels.UpdateVehicleViewModel,System.String)">
+            <summary>
+            Update data of a registered vehicle
+            </summary>
+            <returns>updated data of vehicle</returns>
+            <remarks>
+            {"company":{"cnpj":{"cnpjNumber":"string"},"address":{"street":"string","city":"string","zipCode":"string"}},"licensePlate":"strings","brand":"string","model":"string","color":"string","type":1,"companyName":"string"}
+            </remarks>
+            <response code="200">Success</response>
+            <response code="400">Bad Request</response>
+            <response code="401">Unauthorized</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.VehicleController.Delete(System.String,System.String)">
+            <summary>
+            Delete vehicle by licensePlate
+            </summary>
+            <returns>data of deleted vehicle</returns>
+            <response code="200">Success</response>
+            <response code="401">Unauthorized</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.VehicleController.DepartureAsync(System.String,System.String)">
+            <summary>
+            Registers a vehicle departure
+            </summary>
+            <param name="licensePlate">vehicle license plate</param>
+            <param name="apiKeyName">API key</param>
+            <returns>vehicle data</returns>
+            <response code="200">Success</response>
+            <response code="401">Unauthorized</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:ParkingLotManager.WebApi.Controllers.VehicleController.ReenteredAsync(System.String,System.String)">
+            <summary>
+            Reactivate a vehicle which already has been in the parking lot
+            </summary>
+            <param name="licensePlate">vehicle license plate</param>
+            <param name="apiKeyName">API key</param>
+            <returns>reactivation confirmation</returns>
+            <response code="200">Success</response>
+            <response code="401">Unauthorized</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+    </members>
+</doc>
